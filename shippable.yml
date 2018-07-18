@@ -12,8 +12,9 @@ build:
     #- sudo apt-get install -y rpm
     - rm -f /usr/local/bin/shipctl
     - rm -f /usr/local/bin/utility.sh
-    - which shipctl
+    - which shipctl || true
     - ls -ltra /build/node/shipctl/x86_64/Ubuntu_14.04/
     - export PATH=$PATH:/build/node/shipctl/x86_64/Ubuntu_14.04/
-    - which shipctl
+    - which shipctl || true
     - ls -ltra /usr/local/bin/shipctl
+    - shipctl get_resource_state foobar
