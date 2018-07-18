@@ -16,4 +16,4 @@ build:
     - ls -ltra /build/node/shipctl/x86_64/Ubuntu_14.04/
     - export PATH=$PATH:/build/node/shipctl/x86_64/Ubuntu_14.04/
     - which shipctl || true
-    - shipctl get_resource_state foobar
+    - shipctl get_resource_state testv644_ciRepo
