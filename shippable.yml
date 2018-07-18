@@ -3,4 +3,5 @@ jdk:
   - openjdk8
 build:
   ci:
+    - sleep 300
     - sudo apt-get install -y rpm
