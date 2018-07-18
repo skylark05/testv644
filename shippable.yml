@@ -4,4 +4,5 @@ jdk:
 build:
   ci:
     #- sleep 600
-    - sudo apt-get install -y rpm
+    #- sudo apt-get install -y rpm
+    - which shipctl
