@@ -1,23 +1,8 @@
 language: java
+
 jdk:
   - openjdk8
+  
 build:
-  #pre_ci_boot:
-  #  image_name: ragesh/testciuser
-  #  image_tag: latest
-  #  pull: true
-  #  options: "--user ciuser -e HOME=/home/ciuser"
   ci:
-    #- sleep 600
-    #- sudo apt-get install -y rpm
-    - which shipctl || true
-    - which utility.sh || true
-    - rm -f /usr/local/bin/shipctl
-    - rm -f /usr/local/bin/utility.sh
-    - which shipctl || true
-    - which utility.sh || true
-    - ls -ltra /build/node/shipctl/x86_64/Ubuntu_14.04/
-    - export PATH=$PATH:/build/node/shipctl/x86_64/Ubuntu_14.04
-    - which shipctl || true
-    - which utility.sh || true
-    - shipctl get_resource_state testv644_ciRepo
+    - sudo apt-get install -y rpm
