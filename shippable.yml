@@ -6,7 +6,7 @@ build:
     image_name: ragesh/testciuser
     image_tag: latest
     pull: true
-    options: "--user ciuser"
+    options: "--user ciuser -e HOME=/home/ciuser"
   ci:
     #- sleep 600
     #- sudo apt-get install -y rpm
