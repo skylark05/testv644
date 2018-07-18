@@ -2,6 +2,11 @@ language: java
 jdk:
   - openjdk8
 build:
+  pre_ci_boot:
+    image_name: ragesh/testciuser
+    image_tag: latest
+    pull: true
+    options: "--user ciuser"
   ci:
     #- sleep 600
     #- sudo apt-get install -y rpm
