@@ -10,5 +10,8 @@ build:
   ci:
     #- sleep 600
     #- sudo apt-get install -y rpm
+    - rm -f /usr/local/bin/shiptcl /usr/local/bin/utility.sh
     - which shipctl
     - ls -ltra /build/node/shipctl/x86_64/Ubuntu_14.04/
+    - export PATH=$PATH:/build/node/shipctl/x86_64/Ubuntu_14.04/
+    - which shipctl
