@@ -3,6 +3,4 @@ jdk:
   - openjdk8
 build:
   ci:
-    - top -bn2 | grep '%Cpu' | tail -1 | grep -P  '(....|...) id,'
     - sudo apt-get install -y rpm
-    - top -bn2 | grep '%Cpu' | tail -1 | grep -P  '(....|...) id,'
